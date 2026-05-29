@@ -1,103 +1,135 @@
 # Customer Shopping Analytics Dashboard
 
-An end-to-end data analytics project focused on analyzing customer purchasing behavior using Python, PostgreSQL, and Power BI. The project demonstrates the complete analytics workflow including data cleaning, feature engineering, SQL integration, and interactive business intelligence dashboard development.
+## Overview
+
+This project is an end-to-end data analytics solution focused on understanding customer shopping behavior using Python, SQL, and Power BI. The workflow includes data loading, exploratory data analysis (EDA), data cleaning, SQL-based analysis, and interactive dashboard creation to generate meaningful business insights.
 
 ---
 
-## Project Overview
+## Dataset
 
-This project analyzes retail customer shopping behavior to uncover insights related to:
+The dataset contains retail customer shopping information such as:
 
 * Customer demographics
-* Revenue trends
-* Purchase frequency
-* Seasonal shopping patterns
+* Purchase amounts
+* Product categories
 * Payment methods
-* Subscription behavior
-* Product category performance
-
-The cleaned dataset was processed using Python and Pandas, stored in PostgreSQL, and visualized through an interactive Power BI dashboard.
-
----
-
-## Tech Stack
-
-* Python
-* Pandas
-* PostgreSQL
-* pgAdmin
-* SQLAlchemy
-* Power BI
-* Jupyter Notebook
+* Review ratings
+* Subscription status
+* Seasonal purchasing behavior
 
 ---
 
-## Key Features
+## Tools & Technologies
 
-### Data Cleaning & Preprocessing
+* **Python**
+* **Pandas**
+* **Jupyter Notebook**
+* **PostgreSQL**
+* **pgAdmin**
+* **SQLAlchemy**
+* **Power BI**
 
-* Handled missing values using median-based imputation
-* Removed redundant columns
-* Standardized and transformed dataset structure
+---
 
-### Feature Engineering
+## Project Workflow
 
-* Created customer age groups using quantile binning (`pd.qcut`)
-* Generated behavioral insights from purchase patterns
-* Built grouped analytical metrics for business analysis
+### 1. Data Loading
 
-### Database Integration
+* Imported the dataset into Python using Pandas.
+* Performed initial inspection and validation of data.
 
-* Connected Python with PostgreSQL using SQLAlchemy and psycopg2
-* Uploaded cleaned datasets into PostgreSQL
-* Performed SQL-based business analysis
+### 2. Exploratory Data Analysis (EDA)
 
-### Interactive Dashboard
+* Analyzed customer demographics and purchasing patterns.
+* Identified trends in categories, seasons, and payment methods.
+* Studied revenue distribution and review ratings.
 
-* KPI cards for customer count, revenue, purchase amount, and review ratings
-* Category-wise revenue analysis
-* Seasonal purchase frequency visualization
+### 3. Data Cleaning & Preprocessing
+
+* Handled missing values using median imputation.
+* Removed redundant or unnecessary columns.
+* Standardized and transformed data for analysis.
+* Created additional features such as customer age groups.
+
+### 4. SQL Database Integration
+
+* Connected Python with PostgreSQL using SQLAlchemy.
+* Uploaded cleaned datasets into PostgreSQL.
+* Executed SQL queries for business analysis and reporting.
+
+### 5. Dashboard Development
+
+Built an interactive Power BI dashboard featuring:
+
+* KPI cards for revenue and customer metrics
+* Revenue analysis by category
+* Purchase trends by season
 * Customer demographic insights
 * Subscription and discount analysis
 * Payment method breakdown
-* Age-group purchasing trends
-* Dynamic slicers and modern dark-themed UI design
+* Age-group purchasing behavior
 
 ---
 
-## Workflow
+## Dashboard Highlights
 
-CSV Dataset
-→ Data Cleaning using Pandas
-→ Feature Engineering
-→ PostgreSQL Integration
-→ SQL Analysis
-→ Power BI Dashboard Visualization
+* Interactive filters and slicers
+* Modern dark-themed UI
+* Business-focused visualizations
+* Dynamic analytical insights
 
 ---
 
-## Dashboard Preview
+## Results & Insights
 
-(Add dashboard screenshots here)
+The project helped uncover:
+
+* High-performing product categories
+* Seasonal purchase behavior trends
+* Customer segmentation insights
+* Revenue contribution patterns
+* Payment preference analysis
 
 ---
 
-## Learning Outcomes
+## How to Run the Project
 
-Through this project, I gained hands-on experience in:
+### Clone Repository
 
-* Data preprocessing and transformation
-* SQL database integration
-* Business intelligence dashboard design
-* Data visualization best practices
-* Customer behavior analytics
-* End-to-end analytics workflows
+```bash
+git clone <repository-link>
+```
+
+### Install Required Libraries
+
+```bash
+pip install pandas sqlalchemy psycopg2-binary
+```
+
+### Run Jupyter Notebook
+
+Open the notebook and execute all cells for:
+
+* data cleaning
+* preprocessing
+* database integration
+
+### Open Power BI Dashboard
+
+Load the `.pbix` file in Power BI Desktop to interact with the dashboard.
 
 ---
 
 ## Future Improvements
 
-* Add predictive analytics and machine learning models
-* Build real-time dashboard updates
+* Add machine learning models for customer prediction
 * Deploy dashboard using Power BI Service
-* Add advanced DAX calculations and drill-through analysis
+* Automate ETL pipeline
+* Add advanced DAX measures and drill-through analysis
+
+---
+
+## Author
+
+Parth Patil
